@@ -1,93 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New project</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://images.unsplash.com/photo-1682685797661-9e0c87f59c60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://images.unsplash.com/photo-1682685797661-9e0c87f59c60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+    />
+  </head>
+  <body>
     <header>
-        <h1>
-            My new projct....
-        </h1>
+      <h1>My new projct....</h1>
     </header>
 
-    <br>
-    <hr>
-    <br>
+    <br />
+    <hr />
+    <br />
     <main>
-
-        <section class="section">
-            <div class="title">
-        <h2>Filterable Gallery</h2>
-        <br>
-    </div>
-
-<br>
-<div class="about-center section-center">
-
-    <article class="about">
-          <!-- btn container -->
-
-    <div class="btn-container">
-        <button class="tab-btn active" data-id="all" >All</button>
-        <button class="tab-btn" data-id="logo" >Logo Design</button>
-        <button class="tab-btn" data-id="web" >Web Design</button>
-        <button class="tab-btn" data-id="mobile" >Mobile Apps</button>
-    </div>
-     <article class="about-content">
-        <!--single item-->
-        <div class="content active" id="all">
-            <img src="https://images.unsplash.com/photo-1690902303020-a980f1eda16b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60" height="200" width="300" >
-            <img src="https://images.unsplash.com/photo-1690902303020-a980f1eda16b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60" height="200" width="300" >
-            <img src="https://images.unsplash.com/photo-1690902303020-a980f1eda16b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60" height="200" width="300" >
-
+      <section class="section">
+        <div class="title">
+          <h2>Filterable Gallery</h2>
+          <br />
         </div>
-        <!--end of single item-->
 
-        <!--single item-->
-        <div class="content" id="logo">
-            <img src="https://images.unsplash.com/photo-1690902303020-a980f1eda16b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60" height="200" width="300" >
+        <br />
+        <div class="about-center section-center">
+          <article class="about">
+            <!-- btn container -->
+
+            <div class="btn-container">
+              <!-- has been modified added note(.) to data-id-->
+              <button class="tab-btn active" data-cla=".all">All</button>
+              <button class="tab-btn" data-cla=".logo">Logo Design</button>
+              <button class="tab-btn" data-cla=".web">Web Design</button>
+              <button class="tab-btn" data-cla=".mobile">Mobile Apps</button>
+            </div>
+            <article class="about-content">
+              <!--single item-->
+              <!-- has been modified added class all -->
+              <div class="content all active" id="all">
+                <img
+                  src="https://images.unsplash.com/photo-1690902303020-a980f1eda16b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                  height="200"
+                  width="300"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1690902303020-a980f1eda16b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                  height="200"
+                  width="300"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1690902303020-a980f1eda16b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                  height="200"
+                  width="300"
+                />
+              </div>
+              <!--end of single item-->
+
+              <!--single item-->
+              <!-- has been modified added class logo -->
+              <div class="content logo" id="logo">
+                <img
+                  src="https://images.unsplash.com/photo-1690902303020-a980f1eda16b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                  height="200"
+                  width="300"
+                />
+              </div>
+              <!--end of single item-->
+
+              <!--single item-->
+              <!-- has been modified added class web -->
+              <div class="content web" id="web">
+                <img
+                  src="https://images.unsplash.com/photo-1690902303020-a980f1eda16b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                  height="200"
+                  width="300"
+                />
+              </div>
+              <!--end of single item-->
+
+              <!--single item-->
+              <!-- has been modified added class mobile -->
+              <div class="content mobile" id="mobile">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1673706007413-9f6ede022596?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4MHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                  height="200"
+                  width="300"
+                />
+              </div>
+              <!--end of single item-->
+            </article>
+          </article>
         </div>
-        <!--end of single item-->
-
-        <!--single item-->
-        <div class="content" id="web">
-            <img src="https://images.unsplash.com/photo-1690902303020-a980f1eda16b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60" height="200" width="300" >
-        </div>
-        <!--end of single item-->
-
-        <!--single item-->
-        <div class="content" id="mobile">
-            <img src="https://plus.unsplash.com/premium_photo-1673706007413-9f6ede022596?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4MHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60" height="200" width="300" >
-        </div>
-       <!--end of single item-->           
-
-
-
-</article>
-</article>
-
-
-</div>
-
-
-</section>
-
+      </section>
     </main>
 
-
     <footer>
-        <p>
-            &lt;  &lt;  &lt;  &lt;
-            &copy; Mona Galal
-            &gt;  &gt;   &gt;  &gt;
-        </p>
+      <p>&lt; &lt; &lt; &lt; &copy; Mona Galal &gt; &gt; &gt; &gt;</p>
     </footer>
 
-<script src="main.js"></script>
-
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
