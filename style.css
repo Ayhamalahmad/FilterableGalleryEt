@@ -1,6 +1,6 @@
 *{
-  margin: 1;
-  padding: 1;
+  margin: 1px;
+  padding: 1px;
   box-sizing: border-box;
   text-align: center;
 
@@ -40,6 +40,11 @@ h1 , h2 , h3 {
     color: gray;
     background: gray;
   }
+  /*  has been modified Disable content not contains class active*/
+  .content{
+    display: none;
+  }
+
   .content.active {
     display: block;
   }
