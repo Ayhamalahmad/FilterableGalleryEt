@@ -1,20 +1,30 @@
-const about = document.querySelector(".about");
-const btns = document.querySelectorAll(".tab-btn");
-const articles = document.querySelectorAll(".content");
+// has been modified
+let about = document.querySelector(".about");
+let btns = document.querySelectorAll(".tab-btn");
+let articles = document.querySelectorAll(".content");
 
-about.addEventListener("click", function (e) {
-  const id = e.target.dataset.id;
-  if (id) {
-    // remove selected from other buttons
-    btns.forEach(function (btn) {
+about.addEventListener("click", (e) => {
+  // has been modified
+  let cla = e.target.dataset.cla;
+  console.log(cla);
+  if (cla) {
+    // Remove 'active' class from other buttons
+    btns.forEach((btn) => {
       btn.classList.remove("active");
+
     });
+    // Add 'active' class to clicked button
     e.target.classList.add("active");
-    // hide other articles
-    articles.forEach(function (article) {
+
+
+    // Hide other articles
+    articles.forEach((article) => {
       article.classList.remove("active");
     });
-    const element = document.getElementById(id);
-    element.classList.add("active");
+
+    // Find the element class
+    // has been modified
+    let element = document.querySelector(cla);
+      element.classList.add("active");
   }
 });
